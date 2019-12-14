@@ -1,0 +1,4 @@
+<page title="demo">
+    <?import src="web/org/carewebframework/ui/cwf/sessionMonitor.fsp"?>
+    <cwfShell name="webapp_template" height="100%" width="100%" layout="/layout.xml" />
+</page>
