@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.hspconsortium.carewebframework</groupId>
+		<artifactId>cwf-webapp-parent</artifactId>
+		<version>2.0.0</version>
+	</parent>
+	
+	<groupId>cicd</groupId>
+	<artifactId>FeatureY</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>war</packaging>
+	<name>demo</name>
+	
+	<dependencies>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+		</dependency>
+		<!--  Demo Setup -->
+		<dependency>
+			<groupId>org.hspconsortium.carewebframework</groupId>
+			<artifactId>cwf-demo-setup</artifactId>
+			<version>${cwf.plugins.version}</version>
+		</dependency>
+		<!--  HSPC CWF plugins -->
+		<dependency>
+			<groupId>org.hspconsortium.carewebframework</groupId>
+			<artifactId>cwf-ui-patientselection-v1</artifactId>
+			<version>${cwf.plugins.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hspconsortium.carewebframework</groupId>
+			<artifactId>cwf-plugin-patientheader</artifactId>
+			<version>${cwf.plugins.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hspconsortium.carewebframework</groupId>
+			<artifactId>cwf-plugin-patientphoto</artifactId>
+			<version>${cwf.plugins.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hspconsortium.carewebframework</groupId>
+			<artifactId>cwf-plugin-documents</artifactId>
+			<version>${cwf.plugins.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hspconsortium.carewebframework</groupId>
+			<artifactId>cwf-plugin-conditions</artifactId>
+			<version>${cwf.plugins.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hspconsortium.carewebframework</groupId>
+			<artifactId>cwf-plugin-adversereactions</artifactId>
+			<version>${cwf.plugins.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hspconsortium.carewebframework</groupId>
+			<artifactId>cwf-plugin-familyhistory</artifactId>
+			<version>${cwf.plugins.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hspconsortium.carewebframework</groupId>
+			<artifactId>cwf-plugin-medicationorders</artifactId>
+			<version>${cwf.plugins.version}</version>
+		</dependency>
+		<!-- CareWeb Framework components -->
+		<dependency>
+			<groupId>org.carewebframework</groupId>
+			<artifactId>org.carewebframework.ui.popupsupport</artifactId>
+			<version>${org.carewebframework.core.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.carewebframework</groupId>
+			<artifactId>org.carewebframework.plugin.chat</artifactId>
+			<version>${org.carewebframework.core.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.carewebframework</groupId>
+			<artifactId>org.carewebframework.plugin.userheader</artifactId>
+			<version>${org.carewebframework.core.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.carewebframework</groupId>
+			<artifactId>org.carewebframework.plugin.statuspanel</artifactId>
+			<version>${org.carewebframework.core.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.carewebframework</groupId>
+			<artifactId>org.carewebframework.hibernate.security</artifactId>
+			<version>${org.carewebframework.core.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.carewebframework</groupId>
+			<artifactId>org.carewebframework.hibernate.property</artifactId>
+			<version>${org.carewebframework.core.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.carewebframework</groupId>
+			<artifactId>org.carewebframework.hibernate.h2</artifactId>
+			<version>${org.carewebframework.core.version}</version>
+		</dependency>
+		<!-- SMART Support -->
+		<dependency>
+			<groupId>org.hspconsortium.carewebframework</groupId>
+			<artifactId>cwf-api-smart</artifactId>
+			<version>${cwf.plugins.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hspconsortium.carewebframework</groupId>
+			<artifactId>cwf-plugin-smart</artifactId>
+			<version>${cwf.plugins.version}</version>
+		</dependency>
+		<!-- Security -->
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-config</artifactId>
+		</dependency>
+	</dependencies>
+</project>
